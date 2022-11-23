@@ -1,0 +1,200 @@
+HTTP Request,Fetch all customer details,Fetch Customer by ID,Fetch Customer by Name,Fetch Customer by Email,Add new customer,Update customer details
+URL,,,,,,:   http://localhost:3001/customers
+METHOD,,,,,,
+"Request Body 		",,,,,,
+"Content Type	: raw",,,,,,
+Body ,,,,,,
+,,,,,,
+HTTP Response,,,,,,
+Status Code,,,,,,: 200
+Status Message,,,,,,: ok
+Body,,,,,, : [
+    {
+        "id": 1,
+        "name": "David",
+        "email": "david@gmail.com",
+        "phoneNumber": "+11527896543",
+        "address": {
+            "streetName": "Court Street",
+            "streetNo": "123",
+            "postalCode": "2617"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Mary",
+        "email": "mary@gmail.com",
+        "phoneNumber": "+11524449876",
+        "address": {
+            "streetName": "Scottsdale Kierland",
+            "streetNo": "100",
+            "postalCode": "85254"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Jennifer",
+        "email": "Jennifer@yahoo.com",
+        "phoneNumber": "+11525432178",
+        "address": {
+            "streetName": "Beachwalk",
+            "streetNo": "902",
+            "postalCode": "96815"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Jessica",
+        "email": "Jessica@live.com",
+        "phoneNumber": "+11523456732",
+        "address": {
+            "streetName": "Bellevue Square",
+            "streetNo": "378",
+            "postalCode": "98004"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Paul",
+        "email": "Paul@gmail.com",
+        "phoneNumber": "+11526789543",
+        "address": {
+            "streetName": "Buena Vista Drive",
+            "streetNo": "A-498",
+            "postalCode": "32830"
+        }
+    }
+]
+
+URL,,,,,,:   http://localhost:3001/customers/2
+METHOD,,,,,,
+"Request Body 		",,,,,,
+"Content Type	: raw",,,,,,
+Body ,,,,,,
+,,,,,,
+HTTP Response,,,,,,
+Status Code,,,,,,: 200
+Status Message,,,,,,: ok
+Body,,,,,, :{
+    "id": 2,
+    "name": "Mary",
+    "email": "mary@gmail.com",
+    "phoneNumber": "+11524449876",
+    "address": {
+        "streetName": "Scottsdale Kierland",
+        "streetNo": "100",
+        "postalCode": "85254"
+    }
+}
+
+URL,,,,,,:   http://localhost:3001/customers?name=Paul
+METHOD,,,,,,
+"Request Body 		",,,,,,
+"Content Type	: raw",,,,,,
+Body ,,,,,,
+,,,,,,
+HTTP Response,,,,,,
+Status Code,,,,,,: 200
+Status Message,,,,,,: ok
+Body,,,,,, :[
+    {
+        "id": 5,
+        "name": "Paul",
+        "email": "Paul@gmail.com",
+        "phoneNumber": "+11526789543",
+        "address": {
+            "streetName": "Buena Vista Drive",
+            "streetNo": "A-498",
+            "postalCode": "32830"
+        }
+    }
+]
+
+URL,,,,,,:    http://localhost:3001/customers?email=Jessica@live.com
+METHOD,,,,,,
+"Request Body 		",,,,,,
+"Content Type	: raw",,,,,,
+Body ,,,,,,
+,,,,,,
+HTTP Response,,,,,,
+Status Code,,,,,,: 200
+Status Message,,,,,,: ok
+Body,,,,,, :[
+    {
+        "id": 4,
+        "name": "Jessica",
+        "email": "Jessica@live.com",
+        "phoneNumber": "+11523456732",
+        "address": {
+            "streetName": "Bellevue Square",
+            "streetNo": "378",
+            "postalCode": "98004"
+        }
+    }
+]
+
+URL,,,,,,:     http://localhost:3001/customers?phoneNumber=%2B11525432178
+METHOD,,,,,,
+"Request Body 		",,,,,,
+"Content Type	: raw",,,,,,
+Body ,,,,,,
+,,,,,,
+HTTP Response,,,,,,
+Status Code,,,,,,: 200
+Status Message,,,,,,: ok
+Body,,,,,, :[
+    {
+        "id": 3,
+        "name": "Jennifer",
+        "email": "Jennifer@yahoo.com",
+        "phoneNumber": "+11525432178",
+        "address": {
+            "streetName": "Beachwalk",
+            "streetNo": "902",
+            "postalCode": "96815"
+        }
+    }
+]
+
+URL,,,,,,:       http://localhost:3001/customers
+METHOD,,,,,,
+"Request Body 		",,,,,,
+"Content Type	: raw",,,,,,
+Body ,,,,,,
+,,,,,,
+HTTP Response,,,,,,
+Status Code,,,,,,: 200
+Status Message,,,,,,: ok
+Body,,,,,, :
+{
+    "id": 7,
+    "name": "Ajay",
+    "email": "abc@yahoo.com",
+    "phoneNumber": "+11525452178",
+    "address": {
+        "streetName": "BeachwMumbaialmk",
+        "streetNo": "101",
+        "postalCode": "96155"
+    }
+}
+
+URL,,,,,,:        http://localhost:3001/customers/1
+METHOD,,,,,,
+"Request Body 		",,,,,,
+"Content Type	: raw",,,,,,
+Body ,,,,,,
+,,,,,,
+HTTP Response,,,,,,
+Status Code,,,,,,: 200
+Status Message,,,,,,: ok
+Body,,,,,, :{
+    "id": 1,
+    "name": "Ajay",
+    "email": "abc@yahoo.com",
+    "phoneNumber": "+48596325",
+    "address": {
+        "streetName": "BeachwMumbaialmk",
+        "streetNo": "101",
+        "postalCode": "96155"
+    }
+}

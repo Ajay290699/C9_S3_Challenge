@@ -1,0 +1,51 @@
+{
+    "paths": {
+        "/orders":{
+            "get":{
+                "summary": "",
+                "description": "",
+                "responses": {
+                 "200": {
+                    "description": "",
+                    "content-type": "",
+                    "type": "array",
+                    "items":{
+                        
+                    "id": "integer",
+                    "orderDate": "String",
+                    "deliveryStatus": "String",
+                    "items":[
+                        {
+                            "itemName": "String",
+                            "price": "integer"
+                        },
+                        {
+                            "itemName": "String",
+                            "price": "integer" 
+                        }
+                    ],
+                    "customer": {
+                        "name": "String",
+                        "email": "String",
+                        "phoneNumber": "integer",
+                        "address": {
+                          "streetName": "String",
+                          "streetNo": "integer",
+                          "postalCode": "integer"
+                        }
+                      }
+                    },
+                    "404": {
+                         "description": "",
+                         "content-type": "",
+                         "type": "string",
+                         "message": 
+                        
+                    }
+                 }
+                 }
+
+                }
+            }
+}
+}
